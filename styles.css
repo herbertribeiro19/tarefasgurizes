@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Retirar rolagem da scrollbar */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(18, 45, 38);
+    background: linear-gradient(90deg, #A7542C 0%, #EF6000 49%, #FF9C67 100%);
+    flex-direction: column;
+    color: white;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+    background-color: rgba(41, 41, 41, 0.448);
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 20px 0.5px #22222285;
+}
+
+button {
+    background-color: #ffffff;
+    color: black;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    margin: 20px;
+    transition: all 0.9s;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+button:hover {
+    background-color: rgb(32, 32, 32);
+    transform: scale(1.1);
+    color: white;
+}
+
+h3 {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+#resultados {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.box-task {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #A7542C;
+    padding: 18px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Media Queries para mobile */
+@media (max-width: 768px) {
+    .content {
+        margin-top: 14%;
+        margin-bottom: 14%;
+        padding: 30px;
+    }
+
+    button {
+        padding: 14px;
+        font-size: 20px;
+        margin: 30px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+
+    #resultados {
+        flex-direction: column;
+    }
+
+    .box-task {
+        padding: 15px;
+        margin: 2px;
+    }
+
+    span {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 14%;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 18px;
+        margin: 20px;
+    }
+
+    h3 {
+        font-size: 8px;
+    }
+
+    .box-task {
+        padding: 18px;
+        margin: 2px;
+    }
+
+    span {
+        font-size: 20px;
+    }
+}
